@@ -1,0 +1,7 @@
+s = input("Enter a string: ")
+vowels = sum(c.lower() in "aeiou" for c in s)
+consonants = sum(c.isalpha() and c.lower() not in "aeiou" for c in s)
+special = sum(not c.isalnum() and not c.isspace() for c in s)
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+print("Special characters:", special)
